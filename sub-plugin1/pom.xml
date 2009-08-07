@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<artifactId>plugins</artifactId>
+		<groupId>example</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>example</groupId>
+	<artifactId>sub-plugin1</artifactId>
+	<name>Sub-Plugin 1</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>example</groupId>
+			<artifactId>main-plugin</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Bundle-Name>Sub Plugin 1</Bundle-Name>
+							<Bundle-Description>A bundle that provides a widget</Bundle-Description>
+							<Bundle-Vendor>Apache Felix</Bundle-Vendor>
+							<Bundle-Version>1.0.0</Bundle-Version>
+							<Bundle-Activator>subplugin.Activator</Bundle-Activator>
+							<Export-Package>subplugin</Export-Package>
+							<Import-Package>org.osgi.framework,plugin</Import-Package>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
