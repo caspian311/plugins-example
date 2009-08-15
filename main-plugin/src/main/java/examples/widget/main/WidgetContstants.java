@@ -1,4 +1,4 @@
-package plugin;
+package examples.widget.main;
 
 public class WidgetContstants {
 

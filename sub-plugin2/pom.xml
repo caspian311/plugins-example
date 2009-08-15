@@ -39,8 +39,8 @@
 							<Bundle-Vendor>Apache Felix</Bundle-Vendor>
 							<Bundle-Version>1.0.0</Bundle-Version>
 							<Bundle-Activator>subplugin2.Activator</Bundle-Activator>
-							<Export-Package>subplugin2</Export-Package>
-							<Import-Package>org.osgi.framework,plugin</Import-Package>
+							<Export-Package>examples.widget.subplugin2</Export-Package>
+							<Import-Package>org.osgi.framework,examples.widget.main</Import-Package>
 						</manifestEntries>
 					</archive>
 				</configuration>

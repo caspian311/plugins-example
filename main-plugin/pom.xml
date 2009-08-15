@@ -46,7 +46,7 @@
 							<Bundle-Vendor>Apache Felix</Bundle-Vendor>
 							<Bundle-Version>1.0.0</Bundle-Version>
 							<Bundle-Activator>plugin.Activator</Bundle-Activator>
-							<Export-Package>plugin</Export-Package>
+							<Export-Package>examples.widget.main</Export-Package>
 							<Import-Package>org.osgi.framework, net.todd.osgi.platform.util</Import-Package>
 						</manifestEntries>
 					</archive>

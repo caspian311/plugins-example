@@ -1,4 +1,4 @@
-package plugin;
+package examples.widget.main;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
