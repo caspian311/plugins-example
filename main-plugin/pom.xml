@@ -45,9 +45,9 @@
 							<Bundle-Description>A bundle that pops up a frame</Bundle-Description>
 							<Bundle-Vendor>Apache Felix</Bundle-Vendor>
 							<Bundle-Version>1.0.0</Bundle-Version>
-							<Bundle-Activator>plugin.Activator</Bundle-Activator>
+							<Bundle-Activator>examples.widget.main.Activator</Bundle-Activator>
 							<Export-Package>examples.widget.main</Export-Package>
-							<Import-Package>org.osgi.framework, net.todd.osgi.platform.util</Import-Package>
+							<Import-Package>org.osgi.framework</Import-Package>
 						</manifestEntries>
 					</archive>
 				</configuration>

@@ -38,7 +38,7 @@
 							<Bundle-Description>A bundle that provides a widget</Bundle-Description>
 							<Bundle-Vendor>Apache Felix</Bundle-Vendor>
 							<Bundle-Version>1.0.0</Bundle-Version>
-							<Bundle-Activator>subplugin.Activator</Bundle-Activator>
+							<Bundle-Activator>examples.widget.subplugin1.Activator</Bundle-Activator>
 							<Export-Package>examples.widget.subplugin1</Export-Package>
 							<Import-Package>org.osgi.framework,examples.widget.main</Import-Package>
 						</manifestEntries>
